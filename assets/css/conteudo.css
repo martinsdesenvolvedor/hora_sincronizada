@@ -1,0 +1,10 @@
+.conteudo {
+    width: 100%;
+    max-width: 500px;
+    height: 75px;
+
+    margin: 0 auto;
+    margin-bottom: 1rem;
+    text-align: center;
+   
+}

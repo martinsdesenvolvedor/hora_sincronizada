@@ -1,0 +1,8 @@
+.principal {
+    width: 100%;
+    max-width: 650px;
+    height: 350px;
+    margin: 0 auto;
+    background: #f5f9f9;
+    margin-bottom: 2rem;
+}
