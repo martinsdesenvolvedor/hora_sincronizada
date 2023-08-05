@@ -3,6 +3,7 @@ window.onload = function() {
 }
 
 function atualiza() {
+    var calendarioAtual = document.querySelector('.calendario-atual')
     var conteudoTitulo = document.querySelector('.conteudo__titulo')
     var conteudoParagrafo = document.querySelector('.conteudo__paragrafo')
     var imagem = document.querySelector('.imagem')
@@ -14,8 +15,12 @@ function atualiza() {
     var noite = 'https://images.pexels.com/photos/3799176/pexels-photo-3799176.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1'
 
     var data = new Date()
-    var horas = data.getHours()
-    var minutos = data.getMinutes()
+    var dia = data.getDate().toString().padStart(2, '0')
+    var mes = data.getMonth().toString().padStart(2, '0')
+    var ano = data.getFullYear()
+    var horas = data.getHours().toString().padStart(2, '0')
+    var minutos = data.getMinutes().toString().padStart(2, '0')
+    calendarioAtual.innerHTML = `Data Atual: ${dia}/${mes}/${ano}`
     conteudoParagrafo.innerHTML = `Agora são ${horas}:${minutos} hs`
     imagem.style.backgroundPosition = 'center'
     imagem.style.backgroundSize = '100% 100%'
