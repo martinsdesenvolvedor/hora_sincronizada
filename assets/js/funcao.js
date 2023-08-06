@@ -15,12 +15,12 @@ function atualiza() {
     var noite = 'https://images.pexels.com/photos/3799176/pexels-photo-3799176.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1'
 
     var data = new Date()
-    var dia = data.getDate().toString().padStart(2, '0')
+    var dias = data.getDate().toString().padStart(2, '0')
     var mes = data.getMonth().toString().padStart(2, '0')
     var ano = data.getFullYear()
     var horas = data.getHours().toString().padStart(2, '0')
     var minutos = data.getMinutes().toString().padStart(2, '0')
-    calendarioAtual.innerHTML = `Data Atual: ${dia}/${mes}/${ano}`
+    calendarioAtual.innerHTML = `Data Atual: ${dias}/${mes}/${ano}`
     conteudoParagrafo.innerHTML = `Agora são ${horas}:${minutos} hs`
     imagem.style.backgroundPosition = 'center'
     imagem.style.backgroundSize = '100% 100%'
@@ -33,7 +33,7 @@ function atualiza() {
     } else if (horas > 5 && horas < 12) {
         conteudoTitulo.innerHTML = `Tenha uma Bom Dia`
         imagem.style.backgroundImage = `url(${dia})`
-        document.body.style.background = '#331C10'
+        document.body.style.background = '#5A4336'
     } else if (horas >= 12 && horas < 17) {
         conteudoTitulo.innerHTML = `Tenha uma Boa Tarde`
         imagem.style.backgroundImage = `url(${tarde})`

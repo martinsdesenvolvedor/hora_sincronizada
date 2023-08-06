@@ -1,0 +1,8 @@
+.calendario-atual {
+    margin-left: 10px;
+    background: rgba(16, 15, 15, 0.479);
+    width: 200px;
+    border-radius: 10px;
+    padding: 0.4rem;
+    text-align: center;
+}

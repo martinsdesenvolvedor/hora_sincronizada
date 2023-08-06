@@ -1,15 +1,15 @@
 #calendario {
     padding: 0.4rem;
-    width: 100px;
-    margin-left: 5px;
+    width: 110px;
+    margin-left: 10px;
     border-radius: 8px;
     border: none;
     font-size: 1.1rem;
-    
+    text-align: center;
 }
 
 .ui-datepicker-trigger {
-    padding: 0 10px;
+    padding: 0 12px;
     margin-top: 10px;
     width: 50px;
     height: 40px;
@@ -20,14 +20,6 @@
     align-items: center;
     margin-left: 10px;
     margin-bottom: 1rem;
-    font-size: 0.9rem;
+    font-size: 0.8rem
 }
 
-.calendario-atual {
-    margin-left: 10px;
-    background: rgba(16, 15, 15, 0.479);
-    width: 200px;
-    border-radius: 10px;
-    padding: 0.4rem;
-    text-align: center;
-}
